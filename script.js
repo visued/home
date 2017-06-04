@@ -53,8 +53,8 @@ function process() {
     var history = document.getElementById("history");
     var para = document.createElement("p");
     para.setAttribute('class', 'results');
-    //var node = document.createTextNode("user@mohsenansari.com:~$ "+command);
-    para.innerHTML = "user@mohsenansari.com:~$ "+command;
+    //var node = document.createTextNode("user@victorsued.com:~$ "+command);
+    para.innerHTML = "user@victorsued.com:~$ "+command;
     //para.appendChild(node);
     history.appendChild(para);
     if(isInsertable){
