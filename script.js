@@ -115,17 +115,7 @@ function process() {
         par.setAttribute('class', 'results');
         par.innerHTML = "Well I've done multiple projects that aren't visible online anymore. <br>" +
             "But here are the ones that are available: <br><br>" +
-            "<a href='http://petroninja.mohsenansari.com' target='_blank'> Vogel IPR oil extraction:</a> For this one I " +
-            "used HTML, CSS, and Javascript. If you go to the page and fill in the inputs it shows the chart of how much" +
-            "oil can be extracted from a well. For the plots I used Google charts btw.<br><br>"+
-            "<a href=\'https://github.com/mohsenari/parallel-streaming-ParS\' target='_blank'>Parallel HTTP for video streaming on wireless networks:</a>" +
-            "This project is written in JAVA and it uses mutiple connections to download video files from server. I tried to make it " +
-            "in such a way that follows DASH(Dynamic Adaptive Streaming over HTTP) standard.<br><br>" +
-            "<a href=\'https://github.com/mohsenari/linux-terminal-web-page\' target='_blank'>This website's template:</a> " +
-            "This is the github project that contains the first version of this web page's template. It is written in HTML, CSS, and javascript." +
-            " For drag and drop feature of it I used Interact.js library which made my life a whole lot easier.<br><br>" +
-            "Other than these one I've had bunch of other projects using MATLAB, PHP, JAVA, C++, and python which can't be found online." +
-            " In near future I try make them available.<br><br>";
+            "<a href='http://fiscaliza.herokuapp.com' target='_blank'> Fiscaliza WebApp:</a><br><br>";
         history.appendChild(par);
     }
     else if(command.toLowerCase() == ""){
