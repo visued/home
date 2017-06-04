@@ -103,13 +103,11 @@ function process() {
         var par = document.createElement("p");
         par.setAttribute('class', 'results');
         par.innerHTML = "Thanks for your interest in my bio! <br>" +
-        "My name is Mohsen Ansari, I was born in 1992. Currently I'm studying M.Sc." +
-            " in computer science at the <a href='http://ucalgary.ca' target='_blank'> University of Calgary</a>. <br>"+
-            "I like developing websites and building softwares (shocking!). As you can see, I also like to make unusual websites. <br>" +
+        "My name is Victor Sued, I was born in 1991." +
+            "I like developing websites and building softwares. As you can see, I also like to make unusual websites. <br>" +
             "If you've got any feedback for this website or you want to contact me, you can send me an email to this address: " +
-            "<a href=\'mailto:mohsen.ansari.ucalgary.ca\' target='_blank'>mohsen.ansari@ucalgary.ca</a><br>" +
-            "You can also check my <a href=\'https://ca.linkedin.com/in/mohsenansari\' target='_blank'>LinkedIn</a> profile or look at my resume to know more about my technical skills. <br>" +
-            "For non-technical ones, we need to be friends in real life otherwise, just knowing that I like playing volleyball would be enough :)<br><br>";
+            "<a href=\'mailto:visued@gmail.com\' target='_blank'>visued@gmail.com</a><br>" +
+            "You can also check my <a href=\'https://www.linkedin.com/in/victor-sued-01512637/' target='_blank'>LinkedIn</a> profile or look at my resume to know more about my technical skills. <br>";
         history.appendChild(par);
     }
     else if(command.toLowerCase() == "projects"){
