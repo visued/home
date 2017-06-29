@@ -78,8 +78,8 @@ function process() {
     }
     else if(command.toLowerCase() == "baixar curriculum"){
         var link = document.createElement("a");
-        var reslink = document.createTextNode("MohsenAnsariResume.pdf");
-        link.setAttribute('href', "http://mohsenansari.com/resume/MohsenAnsariResume.pdf");
+        var reslink = document.createTextNode("VictorSued-Curriculum.pdf");
+        link.setAttribute('href', "http://github.com/visued/home/VictorSued-Curriculum.pdf");
         link.setAttribute('class', 'results');
         link.setAttribute('target', "_blank");
         link.appendChild(reslink);
@@ -103,18 +103,17 @@ function process() {
         var par = document.createElement("p");
         par.setAttribute('class', 'results');
         par.innerHTML = "Obrigado por se interessar pela minha bio! <br>" +
-        "Meu nome é Victor Sued, nasci em 1991, em São Joaquim da Barra - SP" +
-            "Eu gosto de desenvolver Web Sites e desenvolvimento de Software em geral. Como você está vendo, eu gosto de desenvolver websites interativos :) <br>" +
-            "Se você tiver algum feedback sobre esse site não hesite em me contatar, se quiser me passar um email: " +
+        "Meu nome é Victor Sued, nascido em 1991, São Joaquim da Barra - SP" +
+            "Eu gosto de desenvolver software e brincar com embarcados. Como você está vendo, eu gosto de desenvolver websites interativos :) <br>" +
+            "Se você tiver algum feedback sobre esse site não hesite em me contatar, se quiser me passar um email: <br>" +
             "<a href=\'mailto:visued@gmail.com\' target='_blank'>visued@gmail.com</a><br>" +
-            "Se quiser checar meu linkedin <a href=\'https://www.linkedin.com/in/victor-sued-01512637/' target='_blank'>LinkedIn</a> nesse perfil tem um resumo de minhas skills ;) <br>";
+            "Se quiser checar meu linkedin <a href=\'https://www.linkedin.com/in/victor-sued-01512637/' target='_blank'>LinkedIn</a> onde está todos as minhas skills ;) <br>";
         history.appendChild(par);
     }
     else if(command.toLowerCase() == "projetos"){
         var par = document.createElement("p");
         par.setAttribute('class', 'results');
-        par.innerHTML = "Esses são os meus projetos que estão disponíveis online. <br>" +
-            "But here are the ones that are available: <br><br>" +
+        par.innerHTML = "Esses são os meus projetos que estão disponíveis online: <br><br>" +
             "<a href='http://fiscaliza.herokuapp.com' target='_blank'> Fiscaliza WebApp:</a><br><br>";
         history.appendChild(par);
     }
