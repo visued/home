@@ -65,18 +65,18 @@ function process() {
         currentcommand = -1;
     }
     document.getElementById('command').value = ""
-    if(command.toLowerCase() == "help"){
+    if(command.toLowerCase() == "ajuda"){
         var par = document.createElement("p");
         par.setAttribute('class', 'results');
-        par.innerHTML = "list of possible commands are: <br>" +
-            "<span class='color'> download resume:</span> to generate a link to my resume in pdf format <br>" +
-            "<span class='color'>change background:</span> to randomly change the picture in the background to another space cat image! <br>" +
-            "<span class='color'>bio:</span> to get a brief inroduction of me <br>" +
-            "<span class='color'>clear:</span> to clear the terminal from previous commands<br>" +
-            "<span class='color'>projects:</span> to get the links to my projects including this website<br><br>";
+        par.innerHTML = "A lista de possíveis comandos são: <br>" +
+            "<span class='color'> baixar curriculum:</span> para gerar um link com o meu curriculum.  <br>" +
+            "<span class='color'>trocar papel de parede:</span> irá mudar aleatóriamente o papel de parede. <br>" +
+            "<span class='color'>bio:</span> uma breve introdução sobre mim. <br>" +
+            "<span class='color'>limpar:</span> para limpar o terminal.<br>" +
+            "<span class='color'>projetos:</span> para pegar os links para meus projetos.<br><br>";
         history.appendChild(par);
     }
-    else if(command.toLowerCase() == "download resume"){
+    else if(command.toLowerCase() == "baixar curriculum"){
         var link = document.createElement("a");
         var reslink = document.createTextNode("MohsenAnsariResume.pdf");
         link.setAttribute('href', "http://mohsenansari.com/resume/MohsenAnsariResume.pdf");
@@ -85,13 +85,13 @@ function process() {
         link.appendChild(reslink);
         history.appendChild(link);
     }
-    else if(command.toLowerCase() == "change background"){
+    else if(command.toLowerCase() == "trocar papel de parede"){
         var picnumber = Math.floor((Math.random() * 10) + 1);
         console.log(picnumber);
         document.body.style.background = "url(\"./bkg/bkg"+picnumber+".jpg\")";
         document.body.style.backgroundSize = "100%";
     }
-    else if(command.toLowerCase() == "clear"){
+    else if(command.toLowerCase() == "limpar"){
         var removables = document.getElementsByClassName('results');
         var numremovables = removables.length;
         for (var i=0 ; i<numremovables; i++){
@@ -102,18 +102,18 @@ function process() {
     else if(command.toLowerCase() == "bio"){
         var par = document.createElement("p");
         par.setAttribute('class', 'results');
-        par.innerHTML = "Thanks for your interest in my bio! <br>" +
-        "My name is Victor Sued, I was born in 1991." +
-            "I like developing websites and building softwares. As you can see, I also like to make unusual websites. <br>" +
-            "If you've got any feedback for this website or you want to contact me, you can send me an email to this address: " +
+        par.innerHTML = "Obrigado por se interessar pela minha bio! <br>" +
+        "Meu nome é Victor Sued, nasci em 1991, em São Joaquim da Barra - SP" +
+            "Eu gosto de desenvolver Web Sites e desenvolvimento de Software em geral. Como você está vendo, eu gosto de desenvolver websites interativos :) <br>" +
+            "Se você tiver algum feedback sobre esse site não hesite em me contatar, se quiser me passar um email: " +
             "<a href=\'mailto:visued@gmail.com\' target='_blank'>visued@gmail.com</a><br>" +
-            "You can also check my <a href=\'https://www.linkedin.com/in/victor-sued-01512637/' target='_blank'>LinkedIn</a> profile or look at my resume to know more about my technical skills. <br>";
+            "Se quiser checar meu linkedin <a href=\'https://www.linkedin.com/in/victor-sued-01512637/' target='_blank'>LinkedIn</a> nesse perfil tem um resumo de minhas skills ;) <br>";
         history.appendChild(par);
     }
-    else if(command.toLowerCase() == "projects"){
+    else if(command.toLowerCase() == "projetos"){
         var par = document.createElement("p");
         par.setAttribute('class', 'results');
-        par.innerHTML = "Well I've done multiple projects that aren't visible online anymore. <br>" +
+        par.innerHTML = "Esses são os meus projetos que estão disponíveis online. <br>" +
             "But here are the ones that are available: <br><br>" +
             "<a href='http://fiscaliza.herokuapp.com' target='_blank'> Fiscaliza WebApp:</a><br><br>";
         history.appendChild(par);
