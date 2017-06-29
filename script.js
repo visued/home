@@ -79,7 +79,7 @@ function process() {
     else if(command.toLowerCase() == "baixar curriculum"){
         var link = document.createElement("a");
         var reslink = document.createTextNode("VictorSued-Curriculum.pdf");
-        link.setAttribute('href', "http://github.com/visued/home/VictorSued-Curriculum.pdf");
+        link.setAttribute('href', "https://github.com/visued/home/blob/master/VictorSued-Curriculum.pdf");
         link.setAttribute('class', 'results');
         link.setAttribute('target', "_blank");
         link.appendChild(reslink);
